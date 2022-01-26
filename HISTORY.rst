@@ -35,6 +35,7 @@ End-User Summary
 - Added feature to select multiple rows in results to create same annotation (#259)
 - Added parameter to Docker entrypoint file to accept number of gunicorn workers
 - Fixing issue with multiple added variants (#283)
+- Implementing several usability improvements for clinvar submission editor (#286).
 
 Full Change List
 ================
@@ -71,6 +72,7 @@ Full Change List
 - Added feature to select multiple rows in results to create same annotation (#259)
 - Added parameter to Docker entrypoint file to accept number of gunicorn workers
 - Fixing issue with multiple added variants (#283)
+- Implementing several usability improvements for clinvar submission editor (#286).
 
 -------
 v0.23.9
