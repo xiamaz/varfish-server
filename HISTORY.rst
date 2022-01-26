@@ -2,6 +2,76 @@
 History / Changelog
 ===================
 
+-----------------
+HEAD (unreleased)
+-----------------
+
+Breaking changes, see below.
+
+End-User Summary
+================
+
+- Fixing Kiosk mode of VarFish.
+- Fixing displaying of beacon information in results table.
+- Fixing broken flags & comments popup for structural variants.
+- Fixing broken search field.
+- Extended manual for bug report workflow.
+- Fixed recompute of variant stats of large small variant sets.
+- Added index for ``SmallVariant`` model filtering for ``case_id`` and ``set_id``.
+  This may take a while!
+- Allowing project owners and delegates to import cases via API (#207).
+- Fix for broken link-out into MutationTaster (#240).
+- Fixing SODAR Core template inconsistency (#150).
+- Imports via API now are only allowed for projects of type ``PROJECT`` (#237).
+- Fixing ensembl gene link-out to wrong genome build (#156).
+- Added section for developers in manual (#267).
+- Updating Clinvar export schema to 1.7 version (#226).
+- Migrated icons to iconify (#208).
+- Bumped chrome-driver version (#208).
+- VarFish now allows for the import of GRCh38 annotated variants.
+  For this, GRCh38 background data must be imported.
+  Kiosk mode does not support GRCh38 yet.
+  **This is a breaking change, new data and CLI must be used!**
+- Added feature to select multiple rows in results to create same annotation (#259)
+- Added parameter to Docker entrypoint file to accept number of gunicorn workers
+- Fixing issue with multiple added variants (#283)
+
+Full Change List
+================
+
+- Resolving problem with varfish-kiosk.
+    - Auto-creating user ``kiosk_user`` when running in Kiosk mode.
+    - Using custom middleware for kiosk user (#215).
+- Kiosk annotation now uses ``set -x`` flag if ``settings.DEBUG`` is true.
+- Mapping kiosk jobs to import queue.
+- Fixing displaying of beacon information in results table.
+- Fixing broken flags & comments popup for structural variants.
+- Fixing broken search field.
+- Extended manual for bug report workflow.
+- Fixed recompute of variant stats of large small variant sets.
+- Added index for ``SmallVariant`` model filtering for ``case_id`` and ``set_id``.
+  This may take a while!
+- Allowing project owners and delegates to import cases via API (#207).
+- Fix for broken link-out into MutationTaster (#240).
+- Fixing SODAR Core template inconsistency (#150).
+- Imports via API now are only allowed for projects of type ``PROJECT`` (#237).
+- Fixing ensembl gene link-out to wrong genome build (#156).
+- Added section for developers in manual (#267).
+- Updating Clinvar export schema to the latest 1.7 version (#226).
+- Migrated icons to iconify (#208).
+- Bumped chrome-driver version (#208).
+- Skipping codacy if token is not defined (#275).
+- Adjusting models and UI for supporting GRCh38 annotated cases.
+  It is currently not possible to migrate a GRCh37 case to GRCh38.
+- Adjusting models and UI for supporting GRCh38 annotated cases.
+  It is currently not possible to migrate a GRCh37 case to GRCh38.
+- Setting ``VARFISH_CADD_SUBMISSION_RELEASE`` is called ``VARFISH_CADD_SUBMISSION_VERSION`` now (**breaking change**).
+- ``import_info.tsv`` expected as in data release from ``20210728`` as built from varfish-db-downloader ``1b03e97`` or later.
+- Extending  columns of ``Hgnc`` to upstream update.
+- Added feature to select multiple rows in results to create same annotation (#259)
+- Added parameter to Docker entrypoint file to accept number of gunicorn workers
+- Fixing issue with multiple added variants (#283)
+
 -------
 v0.23.9
 -------
