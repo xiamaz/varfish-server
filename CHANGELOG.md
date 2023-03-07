@@ -93,6 +93,31 @@
 - Removing template settings in quality form tab (#825).
 - Removing gene blocklist from vue filter app (#823).
 
+## [1.2.0](https://github.com/xiamaz/varfish-server/compare/v1.1.2...v1.2.0) (2023-03-07)
+
+
+### Features
+
+* add export for filter results to vue app ([#866](https://github.com/xiamaz/varfish-server/issues/866)) ([#876](https://github.com/xiamaz/varfish-server/issues/876)) ([33755d9](https://github.com/xiamaz/varfish-server/commit/33755d9b314aa2e65ee18641bac76b4b7b7425dc))
+* add genome browser to case details and sv modal ([#852](https://github.com/xiamaz/varfish-server/issues/852)) ([#853](https://github.com/xiamaz/varfish-server/issues/853)) ([28988cd](https://github.com/xiamaz/varfish-server/commit/28988cdfa1525957ba7b1621972c0051fe204027))
+* adding generic browser track capability and repeat tracks ([#857](https://github.com/xiamaz/varfish-server/issues/857)) ([38fcb98](https://github.com/xiamaz/varfish-server/commit/38fcb989c30878b492feb650bf28b45f31555bbc))
+* Adding presets to gene allowlist in vue filter app ([#824](https://github.com/xiamaz/varfish-server/issues/824)) ([#848](https://github.com/xiamaz/varfish-server/issues/848)) ([e31ee43](https://github.com/xiamaz/varfish-server/commit/e31ee43e94dd0d00d71f0bd1b424ae8787393235))
+* implement expert load/save for genotype criteria ([#872](https://github.com/xiamaz/varfish-server/issues/872)) ([#875](https://github.com/xiamaz/varfish-server/issues/875)) ([87f24b4](https://github.com/xiamaz/varfish-server/commit/87f24b4f89c1d8003d0c15217bea9be20567fbcb))
+* integrate variants/svs vuew apps into cases ([#843](https://github.com/xiamaz/varfish-server/issues/843)) ([#844](https://github.com/xiamaz/varfish-server/issues/844)) ([e0f671b](https://github.com/xiamaz/varfish-server/commit/e0f671bc8379c416a076f874c5b9686f0fcb3b8e))
+* interpret effective/compatible genotype info from worker ([#861](https://github.com/xiamaz/varfish-server/issues/861)) ([#865](https://github.com/xiamaz/varfish-server/issues/865)) ([2178238](https://github.com/xiamaz/varfish-server/commit/2178238593587f2c35b1552ba8630ced4910eb0e))
+* interpret SV breakpoint overlap with segmental duplications and repeats ([#859](https://github.com/xiamaz/varfish-server/issues/859)) ([#860](https://github.com/xiamaz/varfish-server/issues/860)) ([a8e233c](https://github.com/xiamaz/varfish-server/commit/a8e233c471a86d2a5572cc987fdc1979663f1b41))
+
+
+### Bug Fixes
+
+* cnv, genotype criteria and quick presets ([#858](https://github.com/xiamaz/varfish-server/issues/858)) ([c6d5e96](https://github.com/xiamaz/varfish-server/commit/c6d5e96fb24ac4a2d4bf739cd1acc675b4987896))
+* confusing genomic region genelist in filter vue app ([#878](https://github.com/xiamaz/varfish-server/issues/878), [#879](https://github.com/xiamaz/varfish-server/issues/879)) ([#882](https://github.com/xiamaz/varfish-server/issues/882)) ([fc5e7cb](https://github.com/xiamaz/varfish-server/commit/fc5e7cbca711607d7d7497f9f9f56e9bd750cd33))
+* genotype criteria quick preset can now be applied ([#856](https://github.com/xiamaz/varfish-server/issues/856)) ([625cf68](https://github.com/xiamaz/varfish-server/commit/625cf68e57a08e00f64a79bb6b1dfb8fa1a1447b))
+* igv button in smallvariant results filter vue app ([#877](https://github.com/xiamaz/varfish-server/issues/877)) ([#881](https://github.com/xiamaz/varfish-server/issues/881)) ([7737f24](https://github.com/xiamaz/varfish-server/commit/7737f24dc8579fd11b403f0a392a713003cf4b7c))
+* make comments and flags work in SV filtration ([#867](https://github.com/xiamaz/varfish-server/issues/867)) ([#869](https://github.com/xiamaz/varfish-server/issues/869)) ([7b1de6c](https://github.com/xiamaz/varfish-server/commit/7b1de6cbcc34e2e05b83bf35ed1d537f7cef444a))
+* making IGV button in Vue.js SV filtration work ([#870](https://github.com/xiamaz/varfish-server/issues/870)) ([4f94a24](https://github.com/xiamaz/varfish-server/commit/4f94a2448609da490ce6bfd7a8fd735cbf24a0b6))
+* quick presets in vue filter app ([#849](https://github.com/xiamaz/varfish-server/issues/849)) ([#862](https://github.com/xiamaz/varfish-server/issues/862)) ([1e956c9](https://github.com/xiamaz/varfish-server/commit/1e956c92aabfc7fee9caaefaec60f0034f5e2cc9))
+
 ## v1.1.4
 
 ### Full Change List
